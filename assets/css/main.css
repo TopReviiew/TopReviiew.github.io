@@ -11,6 +11,86 @@
 *::before,
 *::after {
   box-sizing: border-box; }
+/*
+contact css 
+*/
+
+/* Container styling */
+.container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+/* Heading styling */
+h2.h4 {
+    font-size: 1.5rem; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333; /* Darker text color for better readability */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555; /* Slightly lighter color for labels */
+}
+
+/* Input and textarea styling */
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    font-size: 1rem; /* Ensure consistent font size */
+    color: #333; /* Text color */
+    background-color: #fff; /* Background color */
+    transition: border-color 0.2s ease; /* Smooth transition for border color */
+}
+
+/* Focus state for inputs and textareas */
+.form-control:focus {
+    border-color: #007bff; /* Change to your primary color */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Light blue shadow */
+}
+
+/* Button styling */
+.btn-dark {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #343a40; /* Dark background color */
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-dark:hover {
+    background-color: #23272b; /* Slightly darker on hover */
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+
 
 html {
   font-family: sans-serif;
