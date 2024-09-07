@@ -1,173 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="./assets/img/topReview favicon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Top Review | Quality Product Reviews</title>
-    <meta name="description" content="Top Review provides quality and unbiased reviews of various products, backed by AI-driven research and real data." />
-    <meta name="keywords" content="product reviews, top reviews, unbiased reviews, tech reviews, health product reviews" />
-    <meta name="author" content="Mr. Rocky" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,600,700" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <!-- Main CSS -->
-    <link href="./assets/css/main.css" rel="stylesheet" />
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3355297884222438"
-     crossorigin="anonymous"></script>
-
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQRP6N000H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GQRP6N000H');
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TopReview | Product Reviews</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
-    <!-- NAVBAR -->
-    <nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="./index.html"><strong>TopReview</strong></a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbarColor02">
-                <ul class="navbar-nav mr-auto d-flex align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./Blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./privacyPolicy.html">Privacy Policy</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto d-flex align-items-center">
-                    <li class="nav-item highlight">
-                        <a class="nav-link" href="./Blog.html">Read Blogs</a>
-                    </li>
-                </ul>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">TopReview</a>
             </div>
+            <div class="menu">
+                <a href="./index.html">Home</a>
+                <a href="./gallery.html">Blogs Gallery</a>
+                <a href="./contact.html">Contact Us</a>
+                <a href="./about.html">About Us</a>
+                <a href="./privacy.html">Privacy Policy</a>
+            </div>
+            <button class="toggle-theme" onclick="toggleTheme()">Dark Mode</button>
         </div>
     </nav>
-    <!-- END NAVBAR -->
 
-    <!-- HEADER -->
-    <div class="container">
-        <div class="jumbotron jumbotron-fluid mb-3 pt-0 pb-0 bg-lightblue position-relative">
-            <div class="pl-4 pr-0 h-100 tofront">
-                <div class="row justify-content-between">
-                    <div class="col-md-6 pt-6 pb-6 align-self-center">
-                        <h1 class="secondfont mb-3 font-weight-bold">Welcome to TopReview | Quality Product Reviews</h1>
-                        <p class="mb-3">
-                            Each piece of information is gathered using the latest technologies, AI & Research. TopReview is the perfect website for the information you need.
-                        </p>
-                        <a href="./about.html" class="btn btn-dark">Read More</a>
-                    </div>
-                    <div class="col-md-6 d-none d-md-block pr-0" style="background-image:url(./assets/img/Home.jpg); background-size:cover; background-position:center; background-repeat:no-repeat; min-height: 250px;">
-                    </div>
+    <!-- Poster Section -->
+    <section class="poster">
+        <div class="container">
+            <h1>A Royal Realm of Knowledge</h1>
+            <p>Step into the elegance of royal insights and trends.</p>
+        </div>
+    </section>
+
+    <!-- Latest Blogs Section -->
+    <section class="section latest-blogs">
+        <div class="container">
+            <h2 class="section-title">Latest Blogs</h2>
+            <div class="blog-cards">
+                <div class="blog-card">
+                    <img src="Images/BestGaming.jpg" alt="Blog Image">
+                    <h3><a href="./blogs/Best Gaming Laptop 2024 A complete Guide.html">Best Gaming Laptop 2024</a></h3>
+                </div>
+                <div class="blog-card">
+                    <img src="Images/iphone 15 pro max.jpg" alt="Blog Image">
+                    <h3><a href="./blogs/Iphone 15 Pro Max  Full Review & Specifications.html">Iphone 15 Pro Max | Full Review & Specifications</a></h3>
+
+                </div>
+                    <div class="blog-card">
+                    <img src="Images/gadgets.jpg" alt="Blog Image">
+                    <h3>Royal Interior Designs for Elegance</h3>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- END HEADER -->
+    </section>
 
-    <!-- MAIN CONTENT -->
-    <div class="container pt-4 pb-4">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card border-0 mb-4 box-shadow h-xl-300">
-                   
-                    <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
-                        <h2 class="h4 font-weight-bold">
-                            <a class="text-dark" href="./blogs/Apple iPhone 15 Pro Max Phone Specifications And Prices.html">Iphone 15 Pro MAX Full Review & Prices</a>
-                        </h2>
-                        <p class="card-text">The Apple iPhone 15 Pro Max sets a new standard in smartphone technology, featuring a powerful A14 Bionic chip, a stunning 6.7-inch OLED display, and a top-tier camera system with a 108MP main sensor.</p>
-                    </div>
+    <!-- Top Blogs Section -->
+    <section class="section top-blogs">
+        <div class="container">
+            <h2 class="section-title">Top Blogs</h2>
+            <div class="blog-cards">
+                <div class="blog-card">
+                    <img src="Images/best laptops.jpg" alt="Blog Image">
+                    <h3>Art of Sophisticated Interiors</h3>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="flex-md-row mb-4 box-shadow h-xl-300">
-                    <div class="mb-3 d-flex align-items-center">
-                                            <img href="./blogs/Best Gaming Laptop 2024.html" height="80" src="../assets/img/top%20review%20best%20gaming%20laptop%20image.jpg" alt="2024 best gaming laptop image">
-                        <div class="pl-3">
-                            <a href="./blogs/Best Gaming Laptop 2024.html" class="text-dark">Best Gaming Laptop 2024</a>
-                                
-                            </h2>
-                            <div class="card-text text-muted small">David Jones</div>
-                            <small class="text-muted">Aug 7 &middot; 5 min read</small>
-                        </div>
-                    </div>
-                    <div class="mb-3 d-flex align-items-center">
-                                            <img height="80" src="./assets/img/best laptops.jpg" alt="Best budget laptop image">
-                        <div class="pl-3">
-                            <h2 class="mb-2 h6 font-weight-bold">
-                                <span class="text-dark">Best Budget Laptop Of The Year</span>
-                            </h2>
-                            <div class="card-text text-muted small">Mr. Rocky</div>
-                            <small class="text-muted">Sep 01 &middot; 5 min read</small>
-                        </div>
-                    </div>
-                    <div class="mb-3 d-flex align-items-center">
-                                            <img height="80" src="./assets/img/faction.jpg" alt="Top latest fashion products image">
-                        <div class="pl-3">
-                            <h2 class="mb-2 h6 font-weight-bold">
-                                <span class="text-dark">Top Latest Fashion Products You Need to Know</span>
-                            </h2>
-                            <div class="card-text text-muted small">Deliana Eldric</div>
-                            <small class="text-muted">May 19 &middot; 5 min read</small>
-                        </div>
-                    </div>
+                <div class="blog-card">
+                    <img src="Images/faction.jpg" alt="Blog Image">
+                    <h3>Royal Fashion Trends</h3>
+                </div>
+                <div class="blog-card">
+                    <img src="Images/top review best gaming laptop image.jpg" alt="Blog Image">
+                    <h3>Guide to Royal Etiquette</h3>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- END MAIN CONTENT -->
+    </section>
 
-    <!-- FOOTER -->
-    <div class="container mt-5">
-        <footer class="bg-white border-top p-3 text-muted small">
-            <div class="row align-items-center justify-content-between">
-                <div>
-                    <span class="navbar-brand mr-2"><strong>Top Review</strong></span> Copyright &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>
-                    . All rights reserved.
-                </div>
-                <div>
-                    Based on <strong>Organic Research</strong> by Mr. Rocky.
-                </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>About TopReview</h3>
+                <p>Royal Blog is your go-to destination for luxurious insights into fashion, design, and more. Stay inspired and elevate your lifestyle to a royal level.</p>
             </div>
-        </footer>
-    </div>
-    <!-- END FOOTER -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./gallery.html">Blogs Gallery</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: topreviewshelp@gmail.com</li>
+                    <li>Phone: +923287618199</li>
+                    <li>Address: 123 Royal Street, Kingdom City</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TopReview. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-    <!-- JAVASCRIPTS -->
-    <script src="./assets/js/vendor/jquery.min.js" type="text/javascript" defer></script>
-    <script src="./assets/js/vendor/popper.min.js" type="text/javascript" defer></script>
-    <script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript" defer></script>
-    <script src="./assets/js/functions.js" type="text/javascript" defer></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
