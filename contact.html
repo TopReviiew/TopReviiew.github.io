@@ -36,25 +36,61 @@
                     <h2>Get in Touch</h2>
                     <p>We would love to hear from you! Whether you have a question, suggestion, or just want to share your thoughts, feel free to reach out to us using the form below or through our contact details.</p>
                     <ul>
-                        <li><strong>Email:</strong> <a href="mailto:contact@royalblog.com">contact@royalblog.com</a></li>
-                        <li><strong>Phone:</strong> +1 123 456 7890</li>
+                        <li><strong>Email:</strong> <a href="mailto:contact@royalblog.com">topreviewshelp@gmail.com</a></li>
+                        <li><strong>Phone:</strong> +923287618199</li>
                         <li><strong>Address:</strong> 123 Royal Street, Kingdom City</li>
                     </ul>
                 </div>
                 <div class="contact-column">
-                    <h2>Contact Form</h2>
-                    <form action="submit_form.php" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                    <!-- Your HTML Form -->
+<form id="commentForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="comment">Comment:</label>
+  <textarea id="comment" name="comment" required></textarea>
+  
+  <button type="submit">Submit</button>
+  
+  <div id="status"></div>
+</form>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("xp9sdYd4lX0iYm4tH"); // Replace with your public key
+  })();
 
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+  document.getElementById('commentForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
 
-                        <button type="submit">Send Message</button>
-                    </form>
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const comment = document.getElementById('comment').value;
+
+    // Create the template parameters that match your EmailJS template
+    const templateParams = {
+      to_name: 'Topreview', // You can change this to a dynamic recipient if needed
+      from_name: name,
+      reply_to: email,
+      message: comment
+    };
+
+    // Send the email via EmailJS
+    emailjs.send("service_l4gj1ib", "template_u4jqtxp", templateParams)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        document.getElementById('status').innerHTML = "Comment sent successfully! We will Contact YOu Soon.";
+      }, function(error) {
+        console.log('FAILED...', error);
+        document.getElementById('status').innerHTML = "Failed to send comment. Please try again later.";
+      });
+  });
+</script>
+
                 </div>
             </div>
         </div>
