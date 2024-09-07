@@ -1,154 +1,87 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon.ico">
-<link rel="icon" type="image/png" href="./assets/img/favicon.ico">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<title>About Us - TopReview</title>
-<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<!-- Main CSS -->
-<link href="./assets/css/main.css" rel="stylesheet"/>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3355297884222438"
-     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TopReview | Product Reviews</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<!--------------------------------------
-NAVBAR
---------------------------------------->
 
-   <nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <!-- Navbar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">TopReview</a>
+            </div>
+            <div class="menu">
+                <a href="./index.html">Home</a>
+                <a href="./gallery.html">Blogs Gallery</a>
+                <a href="./contact.html">Contact Us</a>
+                <a href="./about.html">About Us</a>
+                <a href="./privacy.html">Privacy Policy</a>
+            </div>
+            <button class="toggle-theme" onclick="toggleTheme()">Dark Mode</button>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-us">
         <div class="container">
-            <a class="navbar-brand" href="./index.html"><strong>TopReview</strong></a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse" id="navbarColor02">
-                <ul class="navbar-nav mr-auto d-flex align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./Blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./privacyPolicy.html">Privacy Policy</a>
-                    </li>
+            <h1>About TopReview</h1>
+            <p>Welcome to TopReview, your trusted resource for in-depth product reviews, comparisons, and industry insights. Founded by Mr. Rockey, TopReview was created with the goal of helping consumers make smarter, more informed purchasing decisions. Our passion lies in breaking down complex product features into simple, digestible insights that cater to both tech enthusiasts and casual buyers alike.</p>
+            <p>At TopReview, we cover a wide range of products, from the latest smartphones, gaming gear, and laptops, to cutting-edge gadgets, home tech, and lifestyle essentials. Our mission is simple: provide honest, thorough reviews and recommendations to guide you through the ever-evolving tech landscape.</p>
+            <p>What sets us apart is our commitment to transparency and objectivity. We do not rely on biased sponsorships or hidden agendas; instead, we focus solely on providing genuine, user-focused reviews based on hands-on testing and in-depth research. Whether you're a tech-savvy shopper or someone looking for a reliable product, TopReview is here to help you find what you need.</p>
+
+            <h2>Why Choose TopReview?</h2>
+            <ul>
+                <li><strong>Expert Insights:</strong> Our team, led by Mr. Rockey, has years of experience in the tech industry, offering you expert evaluations of the latest gadgets and technologies.</li>
+                <li><strong>Unbiased Reviews:</strong> We pride ourselves on delivering reviews that are free from marketing influences or brand favoritism.</li>
+                <li><strong>Comprehensive Comparisons:</strong> Unsure of what product to choose? Our detailed side-by-side comparisons highlight key differences and help you find the perfect fit for your needs.</li>
+                <li><strong>User-Centered Focus:</strong> Every review is written with you in mind—whether you're a tech enthusiast, a professional, or just looking for everyday solutions.</li>
+            </ul>
+
+            <p>Thank you for visiting TopReview. If you have any questions or suggestions, please don't hesitate to get in touch with us. We are here to assist you and appreciate your feedback.</p>
+
+            <p>For inquiries or support, you can contact us at <a href="mailto:topreviewhelp@gmail.com">topreviewhelp@gmail.com</a>.</p>
+            <p>Visit our website: <a href="https://topreview.github.io">topreview.github.io</a></p>
+        </div>
+    </section>
+
+ <!-- Footer Section -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>About TopReview</h3>
+                <p>Royal Blog is your go-to destination for luxurious insights into fashion, design, and more. Stay inspired and elevate your lifestyle to a royal level.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./gallery.html">Blogs Gallery</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
                 </ul>
-                <ul class="navbar-nav ml-auto d-flex align-items-center">
-                    <li class="nav-item highlight">
-                        <a class="nav-link" href="./Blog.html">Read Blogs</a>
-                    </li>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: topreviewshelp@gmail.com</li>
+                    <li>Phone: +923287618199</li>
+                    <li>Address: 123 Royal Street, Kingdom City</li>
                 </ul>
             </div>
         </div>
-    </nav>
-<!-- End Navbar -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 TopReview. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-<!--------------------------------------
-HEADER
---------------------------------------->
-<div class="container">
-	<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
-		<div class="h-100 tofront">
-			<div class="row justify-content-between">
-				<div class="col-md-6 pt-6 pb-6 pr-6 align-self-center">
-					<h1 class="display-4 secondfont mb-3 font-weight-bold">About TopReview</h1>
-					<p class="mb-3">
-						Welcome to TopReview, your trusted resource for in-depth product reviews, comparisons, and industry insights. Founded by Mr. Rockey, TopReview was created with the goal of helping consumers make smarter, more informed purchasing decisions. Our passion lies in breaking down complex product features into simple, digestible insights that cater to both tech enthusiasts and casual buyers alike.
-					</p>
-					<p class="mb-3">
-						At TopReview, we cover a wide range of products, from the latest smartphones, gaming gear, and laptops, to cutting-edge gadgets, home tech, and lifestyle essentials. Our mission is simple: provide honest, thorough reviews and recommendations to guide you through the ever-evolving tech landscape.
-					</p>
-					<p class="mb-3">
-						What sets us apart is our commitment to transparency and objectivity. We do not rely on biased sponsorships or hidden agendas; instead, we focus solely on providing genuine, user-focused reviews based on hands-on testing and in-depth research. Whether you're a tech-savvy shopper or someone looking for a reliable product, TopReview is here to help you find what you need.
-					</p>
-				</div>
-				<div class="col-md-6 pr-0">
-					<img src="./assets/img/topReviewAboutPic.jpg" class="shadow" alt="TopReview Blog">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- End Header -->
-
-<!--------------------------------------
-MAIN
---------------------------------------->    
-<div class="container pt-4 pb-4">
-	<div class="row justify-content-center">
-		<div class="col-lg-2 pr-4 mb-4 col-md-12 text-center">
-			<div class="sticky-top text-center">
-				<div class="text-muted">
-					Share this
-				</div>
-				<div class="share d-inline-block">
-					<!-- AddToAny BEGIN -->
-					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-						<a class="a2a_button_facebook"></a>
-						<a class="a2a_button_twitter"></a>
-					</div>
-					<script async src="https://static.addtoany.com/menu/page.js"></script>
-					<!-- AddToAny END -->
-				</div>
-			</div>
-		</div>
-		<div class="col-md-12 col-lg-8">
-			<article class="article-post">
-				<p>Why Choose TopReview?
-
-Expert Insights: Our team, led by Mr. Rockey, has years of experience in the tech industry, offering you expert evaluations of the latest gadgets and technologies.
-Unbiased Reviews: We pride ourselves on delivering reviews that are free from marketing influences or brand favoritism.
-Comprehensive Comparisons: Unsure of what product to choose? Our detailed side-by-side comparisons highlight key differences and help you find the perfect fit for your needs.
-User-Centered Focus: Every review is written with you in mind—whether you're a tech enthusiast, a professional, or just looking for everyday solutions.</p>
-			<p>
-				Thank you for visiting TopReview. If you have any questions or suggestions, please don't hesitate to get in touch with us. We are here to assist you and appreciate your feedback.
-			</p>
-			<p>
-				For inquiries or support, you can contact us at <a href="mailto:topreviewshelp@gmail.com">topreviewhelp@gmail.com</a>.
-			</p>
-			<p>
-				Visit our website: <a href="https://topreview.github.io" target="_blank">topreview.github.io</a>
-			</p>
-			</article>
-		</div>
-	</div>
-</div>
-
-<!--------------------------------------
-FOOTER
---------------------------------------->
-<div class="container mt-5">
-	<footer class="bg-white border-top p-3 text-muted small">
-	<div class="row align-items-center justify-content-between">
-		<div>
-            <span class="navbar-brand mr-2"><strong>TopReview</strong></span> Copyright &copy;
-			<script>document.write(new Date().getFullYear())</script>
-			 . All rights reserved.
-		</div>
-	</div>
-	</footer>
-</div>
-<!-- End Footer -->
-
-<!--------------------------------------
-JAVASCRIPTS
---------------------------------------->
-<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
-<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
-<script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
-<script src="./assets/js/functions.js" type="text/javascript"></script>
+    <script src="script.js"></script>
 </body>
 </html>
